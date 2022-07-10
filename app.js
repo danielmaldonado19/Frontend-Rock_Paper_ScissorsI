@@ -1,4 +1,4 @@
-/*1.Capture the span elms regarding to computer & user choice. The same has to be done with result.*/
+/*1.Capture the span elms regarding to computer & user choice. The same has to be done with result. This is for displaying the choices.*/
 
 const computerChoiceDisplay = document.getElementById('computer-choice');
 const userChoiceDisplay = document.getElementById('user-choice');
@@ -6,10 +6,10 @@ const userChoiceDisplay = document.getElementById('user-choice');
 const resultDisplay = document.getElementById('result');
 
 
-//2.Get all the possible options.
+//2.Get all the possible user options from the btns.
 
 const possibleOptions = document.querySelectorAll('button');
-/*.querySelectorAll returns the class/element we called as the param of the method.*/
+/*.querySelectorAll returns the class/element we called as the param of the method in a list form. Here we captures all the btns.*/
 
 
 //3. Activate the btns for the user click its choice and display it into the h2.
@@ -19,7 +19,7 @@ let userChoice;
 possibleOptions.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id;
     userChoiceDisplay.innerHTML = userChoice;
-    /*for each one of the elements of the list possibleOptions it triggers a fn -> possibleChoice param contain the btn and when we click any of the 3 btns it activates a fn which creates a pointer event (its an object) named e (automatically created by JS) -> the fn stores in userChoice let the str (given by e.target.id) of the btn we clicked.-> Then show the id of the btn we clicked in the h2 of the user.*/
+    /*for each one of the elements of the list possibleOptions it triggers a fn -> possibleChoice param contain the btn and when we click any of the 3 btns it activates a fn which creates a pointer event (its an object) named e (automatically named & created by JS) -> the fn stores in userChoice let the str (given by e.target.id) of the btn we clicked.-> Then show the id of the btn we clicked in the h2 of the user.*/
 
     //4.Generate the computer choice.
     generateComputerChoice();
