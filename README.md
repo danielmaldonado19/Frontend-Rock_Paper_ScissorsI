@@ -1,6 +1,6 @@
 # rockpapperscissors
 
-This is my first game I've made . Its just a rock papper scissors simple game. Enjoy!
+This is the first game I've made . Its just a rock papper scissors simple game. Enjoy!
 (Daniel Maldonado - 2022).
 
 ## Technologies
